@@ -1,0 +1,12 @@
+$ java -cp .:mysql-connector-j.jar:src part2_persistence.LoginSecurityDemo
+Payload 1: username = "admin' OR '1'='1' -- ", password = "x"
+  unsafeLogin() -> TRUE  (BYPASSED AUTHENTICATION)
+  safeLogin()   -> FALSE (BLOCKED BY PREPAREDSTATEMENT)
+
+Payload 2: username = "' UNION SELECT 1, 'attacker', 'admin' -- ", password = "x"
+  unsafeLogin() -> TRUE  (INJECTED SYNTHETIC ROW)
+  safeLogin()   -> FALSE (BLOCKED BY PREPAREDSTATEMENT)
+
+Payload 3: username = "'; DROP TABLE users; --", password = "x"
+  unsafeLogin() -> SQLException / Destructive multi-statement probe
+  safeLogin()   -> FALSE (BLOCKED BY PREPAREDSTATEMENT)

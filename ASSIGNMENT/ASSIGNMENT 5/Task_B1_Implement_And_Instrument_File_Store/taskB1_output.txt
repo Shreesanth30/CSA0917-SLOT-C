@@ -1,0 +1,19 @@
+$ javac src/part2_persistence/PassStore.java src/part2_persistence/LineCounterBenchmark.java
+$ java -cp src part2_persistence.PassStore
+[P1003, 192311003, Divya, 7, 3800.0]
+null
+null
+Route 12 matches: 1
+
+=== Task B1.3: Buffering Benchmark Results ===
+1 MB  (1,048,576 B)  | Unbuffered: 1,976.27 ms (1,048,577 calls) | Buffered 8KB: 3.66 ms   (129 calls)   | Speedup: 539.4x
+10 MB (10,485,760 B) | Unbuffered: 19,987.00 ms (10,485,761 calls)| Buffered 8KB: 33.95 ms  (1,281 calls) | Speedup: 588.8x
+50 MB (52,428,800 B) | Unbuffered: 101,783.03 ms (52,428,801 calls)| Buffered 8KB: 169.68 ms (6,401 calls) | Speedup: 599.9x
+
+=== Task B1.4: PassStore.find() Worst-Case O(n) Linear Growth ===
+1,000 records   -> 0.697 ms
+5,000 records   -> 3.331 ms
+10,000 records  -> 6.557 ms
+25,000 records  -> 16.771 ms
+50,000 records  -> 33.578 ms
+100,000 records -> 67.459 ms

@@ -1,0 +1,14 @@
+=== JDBC / Server Portability Verification (Task B4.2) ===
+Database Product : MySQL 8.0.39
+JDBC Driver      : MySQL Connector/J 8.4.0
+Supports Batch   : true
+Supports Txns    : true
+
+=== Migration Validation & Batch Load Report (Task B4.1) ===
+Total Input Rows Read : 8 data rows
+Valid Rows Committed  : 4 rows loaded atomically via PassLoader.loadAll()
+Rejected Invalid Rows : 4 rows logged to migration_failures.log:
+  - Line 4 [COLUMN_COUNT]          : P2003,192312003,CORRUPT_ROW_ONLY_THREE_FIELDS
+  - Line 5 [PARSE_ERROR]           : P2004,192312004,Vikram S,ABC_ROUTE,T Nagar,2026-12-31,4200.00
+  - Line 6 [NON_POSITIVE_VALUE]    : P2005,192312005,Priya Dharshini,8,Porur,2026-12-31,-150.00
+  - Line 8 [MISSING_REQUIRED_FIELD]: P2007,,Missing RegNo,9,Koyambedu,2026-12-31,3900.00

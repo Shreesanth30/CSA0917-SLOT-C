@@ -1,0 +1,9 @@
+pass_id,reg_no,name,route_no,boarding_stop,validity_date,amount_paid
+P2001,192312001,Suresh Babu,14,Velachery,2026-12-31,4600.00
+P2002,192312002,Ananya Nair,22,Anna Nagar,2026-12-31,5100.00
+P2003,192312003,CORRUPT_ROW_ONLY_THREE_FIELDS
+P2004,192312004,Vikram S,ABC_ROUTE,T Nagar,2026-12-31,4200.00
+P2005,192312005,Priya Dharshini,8,Porur,2026-12-31,-150.00
+P2006,192312006,Rahul Menon,14,Adyar,2026-12-31,4600.00
+P2007,,Missing RegNo,9,Koyambedu,2026-12-31,3900.00
+P2008,192312008,Deepika K,31,OMR Sholinganallur,2026-12-31,5500.00

@@ -1,0 +1,15 @@
+=== Task B3.1: ResultSetMetaData Verification ===
+Col 1: pass_id    | Type: VARCHAR(16)
+Col 2: reg_no     | Type: VARCHAR(20)
+Col 3: name       | Type: VARCHAR(100)
+Col 4: route_no   | Type: INT
+Col 5: amount     | Type: DECIMAL(10,2)
+
+=== Task B3.2: JDBC Insert Scaling Comparison ===
+1,000 rows   | Statement: 20.43 ms   | PreparedStatement: 3.07 ms  | Batch(1000): 2.34 ms
+10,000 rows  | Statement: 173.83 ms  | PreparedStatement: 29.76 ms | Batch(1000): 23.49 ms
+100,000 rows | Statement: 1754.47 ms | PreparedStatement: 310.18 ms| Batch(1000): 330.73 ms
+
+=== Task B3.3: Half-Way Failure (Invalid Amount -99.0 at Row 501) ===
+Mode A (autoCommit = true, batch size 500) -> 500 rows committed, partial corruption!
+Mode B (PassLoader single transaction)     -> 0 rows remaining after con.rollback()!

