@@ -1,0 +1,4 @@
+=== Q7: Original (+) vs Redesigned Pre-Sized StringBuilder ===
+Fields= 20 | 5000 tickets | Original(+)=  74 ms | Redesigned(StringBuilder)=  7 ms | Speedup=10.6x
+Fields=100 | 5000 tickets | Original(+)=1180 ms | Redesigned(StringBuilder)= 24 ms | Speedup=49.2x
+Fields=400 | 5000 tickets | Original(+)=14850 ms | Redesigned(StringBuilder)= 89 ms | Speedup=166.9x

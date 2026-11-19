@@ -1,0 +1,4 @@
+=== Q2: ArrayList vs LinkedList vs ArrayDeque Playlist Benchmark ===
+Size N=1000 | Append(ms): AL=1, LL=2, AD=1 | 1000 Random Gets(us): AL=18, LL=940 | 1000 Front Adds(ms): AL=2, LL=1, AD=1 | Iter(us): AL=95, LL=140
+Size N=10000 | Append(ms): AL=4, LL=11, AD=3 | 5000 Random Gets(us): AL=42, LL=48200 | 2000 Front Adds(ms): AL=18, LL=2, AD=2 | Iter(us): AL=780, LL=1620
+Size N=50000 | Append(ms): AL=16, LL=58, AD=12 | 5000 Random Gets(us): AL=49, LL=265400 | 2000 Front Adds(ms): AL=145, LL=3, AD=2 | Iter(us): AL=3910, LL=9450

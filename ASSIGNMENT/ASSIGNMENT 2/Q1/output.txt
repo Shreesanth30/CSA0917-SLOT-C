@@ -1,0 +1,21 @@
+=== Q1: Railway E-Ticket String vs StringBuilder vs StringBuffer ===
+Workload: 10000 tickets x 10 fields
+  String (+)      | Avg Time:   48 ms | Est. Interm. String/Char Objects: ~200000
+  StringBuilder   | Avg Time:    6 ms | Est. Interm. String/Char Objects: ~30000
+  StringBuffer    | Avg Time:    8 ms | Est. Interm. String/Char Objects: ~30000
+  String.join     | Avg Time:    5 ms | Est. Interm. String/Char Objects: ~20000
+  StringJoiner    | Avg Time:    6 ms | Est. Interm. String/Char Objects: ~20000
+
+Workload: 10000 tickets x 50 fields
+  String (+)      | Avg Time:  640 ms | Est. Interm. String/Char Objects: ~1000000
+  StringBuilder   | Avg Time:   18 ms | Est. Interm. String/Char Objects: ~30000
+  StringBuffer    | Avg Time:   24 ms | Est. Interm. String/Char Objects: ~30000
+  String.join     | Avg Time:   15 ms | Est. Interm. String/Char Objects: ~20000
+  StringJoiner    | Avg Time:   17 ms | Est. Interm. String/Char Objects: ~20000
+
+Workload: 5000 tickets x 120 fields
+  String (+)      | Avg Time: 1420 ms | Est. Interm. String/Char Objects: ~1200000
+  StringBuilder   | Avg Time:   21 ms | Est. Interm. String/Char Objects: ~15000
+  StringBuffer    | Avg Time:   29 ms | Est. Interm. String/Char Objects: ~15000
+  String.join     | Avg Time:   18 ms | Est. Interm. String/Char Objects: ~10000
+  StringJoiner    | Avg Time:   20 ms | Est. Interm. String/Char Objects: ~10000

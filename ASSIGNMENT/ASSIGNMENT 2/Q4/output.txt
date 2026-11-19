@@ -1,0 +1,4 @@
+=== Q4: HashMap vs TreeMap vs LinkedHashMap Pharmacy Inventory ===
+N=500 | 100k Lookups(ms): HM=4, TM=14, LHM=5 | Code-Order Report(us): HM_sort=95, TM_direct=12 | Arrival Report(us): LHM_direct=8
+N=5000 | 100k Lookups(ms): HM=6, TM=24, LHM=7 | Code-Order Report(us): HM_sort=1180, TM_direct=140 | Arrival Report(us): LHM_direct=85
+N=25000 | 100k Lookups(ms): HM=8, TM=36, LHM=9 | Code-Order Report(us): HM_sort=7450, TM_direct=790 | Arrival Report(us): LHM_direct=420

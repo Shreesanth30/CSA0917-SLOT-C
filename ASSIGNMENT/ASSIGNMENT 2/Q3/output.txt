@@ -1,0 +1,4 @@
+Unique students: 2
+Experiment 1 (Broken hashCode, duplicate scan): size = 3 (Expected buggy: 3)
+Experiment 2 (Fixed hashCode, multi-gate scan): size = 2 (Expected: 2)
+Experiment 3 (TreeSet name-only comparator): size = 1 (Expected: 1)
