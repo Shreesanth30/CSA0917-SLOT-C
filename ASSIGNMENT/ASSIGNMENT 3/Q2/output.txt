@@ -1,0 +1,9 @@
+Saved answer01.pdf
+Error: Could not store answer02.pdf
+Cause: Disk quota exceeded
+
+--- 3-Layer Portal Scenarios ---
+UI Alert [ExamWindowClosedException]: Submission window closed at 17:00 IST
+UI Alert [StudentNotRegisteredException]: Student 192599999 is not enrolled in CSA09
+UI Alert [SubmissionStorageException]: Could not store ans_large.pdf
+  Root Cause: IOException -> Disk quota exceeded

@@ -1,0 +1,8 @@
+Before start: s1.isAlive()=false, state=NEW
+After start: s1.isAlive()=true, state=RUNNABLE
+Station-2 finished (25 scripts)
+Station-1 finished (25 scripts)
+Station-4 [Runnable] finished (25 scripts)
+Station-3 [Runnable] finished (25 scripts)
+After join: s1.isAlive()=false, state=TERMINATED
+Total scripts scanned across 4 stations: 100

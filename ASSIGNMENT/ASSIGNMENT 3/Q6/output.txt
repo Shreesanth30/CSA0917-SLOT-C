@@ -1,0 +1,2 @@
+Sum of tokens collected: 210 (expected 210)
+Safe Wallet Balances after 200 concurrent transfers: W1=500, W2=500

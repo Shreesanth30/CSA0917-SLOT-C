@@ -1,0 +1,13 @@
+=== Q1: Bank ATM Simulation Test Cases ===
+  [FINALLY] Card ejected & session lock released for ACC1001
+Test 1 (Valid): [Reader=READY] DISPENSED 3000.0 | New Balance=12000.0
+  [FINALLY] Card ejected & session lock released for ACC1001
+Test 2 (Letters): [Reader=READY] CAUGHT [Multi-Catch Input Error - Unchecked]: NumberFormatException - For input string: "abc"
+  [FINALLY] Card ejected & session lock released for ACC1001
+Test 3 (Negative): [Reader=READY] CAUGHT [Multi-Catch Input Error - Unchecked]: InvalidAmountException - Amount must be positive: -500.0
+  [FINALLY] Card ejected & session lock released for ACC1002
+Test 4 (Overdraft): [Reader=READY] CAUGHT [InsufficientFundsException - Checked]: Requested 9000.0 exceeds balance 2500.0
+  [FINALLY] Card ejected & session lock released for ACC1001
+Test 5 (Missing Reader): CAUGHT [FileNotFoundException - Checked]: Card reader device file missing: missing_reader.cfg
+  [FINALLY] Card ejected & session lock released for ACC9999
+Test 6 (Unknown Account): [Reader=READY] CAUGHT [Fallback Handler]: NoSuchElementException - Account not found: ACC9999

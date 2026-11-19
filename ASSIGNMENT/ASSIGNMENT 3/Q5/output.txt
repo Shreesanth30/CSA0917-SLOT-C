@@ -1,0 +1,2 @@
+Unsynchronized seats sold (race condition): 19
+Seats sold: 10

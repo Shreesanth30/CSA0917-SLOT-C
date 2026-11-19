@@ -1,0 +1,3 @@
+Safe report total: 40000.75
+Manual version failed with leaked handles: Corrupt sales record in store3.txt (open handles=4)
+Try-with-resources failed cleanly (0 leaked handles): Corrupt sales record in store3.txt
